@@ -1,0 +1,20 @@
+#bs-nav {
+  padding: 15px 0 15px 0;
+  background-color: #3C405B;
+}
+#bs-nav ul {
+  list-style: none;
+}
+#bs-nav ul li {
+  display: inline;
+  padding: 0 1.25em;
+}
+#bs-nav ul li a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+#bs-nav ul li a:hover {
+  cursor: pointer;
+}
