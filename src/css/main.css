@@ -18,13 +18,50 @@ body, input, textarea, select {
   border-radius: 8px;
   overflow: hidden;
   background-color: #9ED2BC;
-  padding: 1em 2.35em 1em 2.35em;
+  padding: 0.8em 2.35em 0.8em 2.35em;
   font-size: 1.5em;
   letter-spacing: -0.025em;
 }
+.button.space {
+  margin-right: 15px;
+}
 
-.show-mobile {
-  display: none;
+.section {
+  margin-top: 50px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.section-header h1 {
+  font-size: 2em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+  margin: 0 0 0.5em 0;
+  color: #FFBF68;
+}
+.section-header p {
+  font-size: 1.25em;
+  color: #888;
+  margin: 0;
+}
+
+#contact {
+  margin-bottom: 2em;
+}
+#contact #contact-us-section .online-form-button {
+  color: #fff;
+  background-color: #9ED2BC;
+  font-size: 1.2em;
+  letter-spacing: -0.025em;
+  font-weight: 700;
+}
+#contact #contact-us-section .online-form-button.space {
+  margin-right: 15px;
+}
+#contact #contact-us-section .online-form-button.clear {
+  background-color: #888;
 }
 
 #bs-nav {
@@ -79,18 +116,111 @@ body, input, textarea, select {
   margin-bottom: 2em;
 }
 
+#footer {
+  background-color: #3C405B;
+  padding: 2em 2em 1em 2em;
+}
+#footer #footer-follow {
+  text-align: center;
+}
+#footer #footer-follow h1 {
+  color: #FFBF68;
+  font-size: 1.5em;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+#footer #footer-follow a {
+  color: #fff;
+  font-size: 40px;
+  text-decoration: none;
+}
+#footer #footer-follow p {
+  color: #888;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+#footer #footer-follow small {
+  color: #888;
+  font-size: 12px;
+}
+#footer #footer-end p {
+  color: #fff;
+  letter-spacing: 0.1em;
+  padding: 15px 8px 0;
+  font-size: 12px;
+  margin: 0;
+}
+
 @media (max-width: 375px) {
-  .show-mobile {
-    display: block;
+  #bs-nav ul li {
+    padding: 0 0.5em;
+  }
+  #bs-nav ul li a {
+    font-size: 12px;
   }
 
-  #bs-nav ul li a {
-    font-size: 14px;
+  #intro {
+    padding-top: 2.5em;
+  }
+  #intro .row > .col-12-medium {
+    width: 100%;
+  }
+  #intro .intro-inner {
+    padding: 50px 0;
+  }
+  #intro .intro-inner .intro-image {
+    width: 12em;
+    height: 12em;
+    display: block;
+    margin: auto auto;
+  }
+  #intro .intro-inner header {
+    margin: 0 0 1.3em 0;
+    text-align: center;
+  }
+  #intro .intro-inner header h1 {
+    margin-top: 0.8em;
+    font-size: 1.5em;
+    line-height: 1.25em;
+  }
+  #intro .intro-inner p {
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 1.3em;
+  }
+  #intro .intro-inner .button {
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 0;
+    width: 100%;
+    padding: 0.7em 0 0.7em 0;
+  }
+
+  #footer #footer-follow {
+    text-align: center;
+  }
+  #footer #footer-follow h1 {
+    font-size: 1.25em;
+  }
+  #footer #footer-follow a {
+    font-size: 35px;
+  }
+  #footer #footer-follow p {
+    font-size: 16px;
+  }
+  #footer #footer-end p {
+    padding: 15px 0 0;
+    font-size: 9px;
+    text-align: center;
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 767px) {
-  .show-mobile {
-    display: block;
+@media (min-width: 376px) and (max-width: 767px) {
+  #bs-nav ul li {
+    padding: 0 1em;
+  }
+  #bs-nav ul li a {
+    font-size: 14px;
   }
 
   #intro {
@@ -113,6 +243,7 @@ body, input, textarea, select {
     text-align: center;
   }
   #intro .intro-inner header h1 {
+    margin-top: 0.5em;
     font-size: 2.25em;
     line-height: 1.25em;
   }
@@ -122,9 +253,74 @@ body, input, textarea, select {
   }
   #intro .intro-inner .button {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     letter-spacing: 0;
     width: 100%;
-    padding: 1em 0 1em 0;
+    padding: 0.7em 0 0.7em 0;
+  }
+
+  #footer #footer-end p {
+    color: #fff;
+    letter-spacing: 0.1em;
+    padding: 15px 8px 0;
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #intro .intro-inner {
+    padding: 50px 0;
+  }
+  #intro .intro-inner .intro-image {
+    width: 12em;
+    height: 12em;
+  }
+  #intro .intro-inner header {
+    margin: 0 0 1.5em 0;
+  }
+  #intro .intro-inner header h1 {
+    font-size: 2.25em;
+    font-weight: 300;
+  }
+  #intro .intro-inner p {
+    font-size: 1em;
+  }
+  #intro .intro-inner .button {
+    text-align: center;
+    font-size: 1.1em;
+    letter-spacing: 0;
+    width: 100%;
+    padding: 0.7em 0 0.7em 0;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #intro .intro-inner {
+    padding: 100px 0;
+  }
+  #intro .intro-inner .intro-image {
+    width: 18em;
+    height: 18em;
+  }
+  #intro .intro-inner header {
+    margin: 0 0 1.5em 0;
+  }
+  #intro .intro-inner p {
+    font-size: 1.5em;
+    line-height: 1.75em;
+    color: #888;
+    margin-bottom: 1.5em;
+  }
+  #intro .intro-inner .button {
+    font-size: 1.35em;
+    padding: 0.7em 2.35em 0.7em 2.35em;
+  }
+}
+@media (min-width: 1200px) {
+  #contact {
+    margin-bottom: 2em;
+  }
+  #contact #contact-us-section {
+    padding: 0 200px;
   }
 }

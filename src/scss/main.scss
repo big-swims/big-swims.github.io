@@ -20,13 +20,58 @@ body, input, textarea, select {
     border-radius: 8px;
     overflow: hidden;
     background-color: $branding-green;
-    padding: 1em 2.35em 1em 2.35em;
+    padding: .8em 2.35em .8em 2.35em;
     font-size: 1.5em;
     letter-spacing: -0.025em;
+
+    &.space {
+        margin-right: 15px;
+    }
 }
 
-.show-mobile {
-    display: none;
+.section {
+    margin-top: 50px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 25px;
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: -0.015em;
+        font-weight: 700;
+        margin: 0 0 0.5em 0;
+        color: $branding-yellow;
+    }
+
+    p {
+        font-size: 1.25em;
+        color: $grey;
+        margin: 0;
+    }
+}
+
+#contact {
+    margin-bottom: 2em;
+
+    #contact-us-section {
+        .online-form-button {
+            color: $white;
+            background-color: $branding-green;
+            font-size: 1.2em;
+            letter-spacing: -0.025em;
+            font-weight: 700;
+
+            &.space {
+                margin-right: 15px;
+            }
+
+            &.clear {
+                background-color: $grey;
+            }
+        }
+    }
 }
 
 #bs-nav {
@@ -91,30 +136,150 @@ body, input, textarea, select {
     }
 }
 
+#footer {
+    background-color: $branding-blue;
+    padding: 2em 2em 1em 2em;
+
+    #footer-follow {
+        text-align: center;
+
+        h1 {
+            color: $branding-yellow;
+            font-size: 1.5em;
+            letter-spacing: -0.015em;
+            font-weight: 700;
+        }
+
+        a {
+            color: $white;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        p {
+            color: $grey;
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        small {
+            color: $grey;
+            font-size: 12px;
+        }
+    }
+
+    #footer-end {
+        p {
+            color: $white;
+            letter-spacing: .1em;
+            padding: 15px 8px 0;
+            font-size: 12px;
+            margin: 0;
+        }
+    }
+}
+
 // -------------------------------------- Media Queries --------------------------------------
 // Tiny devices (landscape phones, 576px and up)
 @media (max-width: 375px) {
-    .show-mobile {
-        display: block;
-    }
-
     #bs-nav {
         ul {
             li {
+                padding: 0 .5em;
+
                 a {
-                    font-size: 14px;
+                    font-size: 12px;
                 }
+            }
+        }
+    }
+
+    #intro {
+        padding-top: 2.5em;
+
+        .row > .col-12-medium {
+            width: 100%;
+        }
+    
+        .intro-inner {
+            padding: 50px 0;
+    
+            .intro-image {
+                width: 12em;
+                height: 12em;
+                display: block;
+                margin: auto auto;
+            }
+    
+            header {
+                margin: 0 0 1.3em 0;
+                text-align: center;
+    
+                h1 {
+                    margin-top: .8em;
+                    font-size: 1.5em;
+                    line-height: 1.25em;
+                }
+            }
+    
+            p {
+                font-size: 1em;
+                text-align: center;
+                margin-bottom: 1.3em;
+            }
+
+            .button {
+                text-align: center;
+                font-size: 1em;
+                letter-spacing: 0;
+                width: 100%;
+                padding: .7em 0 .7em 0;
+            }
+        }
+    }
+
+    #footer {
+        #footer-follow {
+            text-align: center;
+    
+            h1 {
+                font-size: 1.25em;
+            }
+    
+            a {
+                font-size: 35px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+        }
+
+        #footer-end {
+            p {
+                padding: 15px 0 0;
+                font-size: 9px;
+                text-align: center;
             }
         }
     }
 }
 
 // Small devices (landscape phones, 55px and up (576))
-@media only screen and (min-width: 400px) and (max-width: 767px) {
-    .show-mobile {
-        display: block;
+@media (min-width: 376px) and (max-width: 767px) {
+    #bs-nav {
+        ul {
+            li {
+                padding: 0 1em;
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
     }
-    
+
     #intro {
         padding-top: 2.5em;
 
@@ -137,6 +302,7 @@ body, input, textarea, select {
                 text-align: center;
     
                 h1 {
+                    margin-top: 0.5em;
                     font-size: 2.25em;
                     line-height: 1.25em;
                 }
@@ -149,25 +315,102 @@ body, input, textarea, select {
 
             .button {
                 text-align: center;
-                font-size: 1.2em;
+                font-size: 1.1em;
                 letter-spacing: 0;
                 width: 100%;
-                padding: 1em 0 1em 0;
+                padding: .7em 0 .7em 0;
+            }
+        }
+    }
+
+    #footer {
+        #footer-end {
+            p {
+                color: $white;
+                letter-spacing: .1em;
+                padding: 15px 8px 0;
+                font-size: 12px;
+                margin: 0;
+                text-align: center;
             }
         }
     }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    #intro {
+        .intro-inner {
+            padding: 50px 0;
+    
+            .intro-image {
+                width: 12em;
+                height: 12em;
+            }
+    
+            header {
+                margin: 0 0 1.5em 0;
+    
+                h1 {
+                    font-size: 2.25em;
+                    font-weight: 300;
+                }
+            }
+    
+            p {
+                font-size: 1em;
+            }
+
+            .button {
+                text-align: center;
+                font-size: 1.1em;
+                letter-spacing: 0;
+                width: 100%;
+                padding: .7em 0 .7em 0;
+            }
+        }
+    }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
+    #intro {
+        .intro-inner {
+            padding: 100px 0;
+    
+            .intro-image {
+                width: 18em;
+                height: 18em;
+            }
+
+            header {
+                margin: 0 0 1.5em 0;
+            }
+    
+            p {
+                font-size: 1.5em;
+                line-height: 1.75em;
+                color: $grey;
+                margin-bottom: 1.5em;
+            }
+
+            .button {
+                font-size: 1.35em;
+                padding: .7em 2.35em .7em 2.35em;
+            }
+        }
+    }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    #contact {
+        margin-bottom: 2em;
+    
+        #contact-us-section {
+            padding: 0 200px;
+        }
+    }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
