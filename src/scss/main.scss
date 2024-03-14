@@ -1,8 +1,33 @@
 @import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700');
+
+body, input, textarea, select {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: $black;
+}
+
+.button {
+    transition: background-color .2s ease-in-out;
+    position: relative;
+    display: inline-block;
+    color: $white !important;
+    text-decoration: none;
+    font-weight: 700;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: $branding-green;
+    padding: 1em 2.35em 1em 2.35em;
+    font-size: 1.5em;
+    letter-spacing: -0.025em;
+}
 
 #bs-nav {
     padding: 15px 0 15px 0;
-    background-color: #3C405B;
+    background-color: $branding-blue;
 
     ul {
         list-style: none;
@@ -25,9 +50,100 @@
     }
 }
 
+#intro {
+    padding-top: 3.4em;
+
+    .intro-inner {
+        padding: 150px 0;
+
+        .intro-image {
+            border-radius: 100%;
+            width: 20em;
+            height: 20em;
+        }
+
+        header {
+            margin: 0 0 2em 0;
+
+            h1 {
+                margin-top: 0.35em;
+                font-size: 3.25em;
+                letter-spacing: -0.025em;
+                font-weight: 300;
+
+                strong {
+                    font-weight: 700;
+                    color: $branding-yellow;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.5em;
+            line-height: 1.75em;
+            color: $grey;
+            margin-bottom: 2em;
+        }
+    }
+}
+
 // -------------------------------------- Media Queries --------------------------------------
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
+// Tiny devices (landscape phones, 576px and up)
+@media (max-width: 375px) {
+    #bs-nav {
+        ul {
+            li {
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, 55px and up (576))
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    #intro {
+        padding-top: 2.5em;
+
+        .row > .col-12-medium {
+            width: 100%;
+        }
+    
+        .intro-inner {
+            padding: 50px 0;
+    
+            .intro-image {
+                width: 15em;
+                height: 15em;
+                display: block;
+                margin: auto auto;
+            }
+    
+            header {
+                margin: 0 0 1.5em 0;
+                text-align: center;
+    
+                h1 {
+                    font-size: 2.25em;
+                    line-height: 1.25em;
+                }
+            }
+    
+            p {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            .button {
+                text-align: center;
+                font-size: 1.2em;
+                letter-spacing: 0;
+                width: 100%;
+                padding: 1em 0 1em 0;
+            }
+        }
+    }
 }
 
 // Medium devices (tablets, 768px and up)

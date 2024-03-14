@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
+body, input, textarea, select {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: #28282B;
+}
+
+.button {
+  transition: background-color 0.2s ease-in-out;
+  position: relative;
+  display: inline-block;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #9ED2BC;
+  padding: 1em 2.35em 1em 2.35em;
+  font-size: 1.5em;
+  letter-spacing: -0.025em;
+}
+
 #bs-nav {
   padding: 15px 0 15px 0;
   background-color: #3C405B;
@@ -17,4 +42,77 @@
 }
 #bs-nav ul li a:hover {
   cursor: pointer;
+}
+
+#intro {
+  padding-top: 3.4em;
+}
+#intro .intro-inner {
+  padding: 150px 0;
+}
+#intro .intro-inner .intro-image {
+  border-radius: 100%;
+  width: 20em;
+  height: 20em;
+}
+#intro .intro-inner header {
+  margin: 0 0 2em 0;
+}
+#intro .intro-inner header h1 {
+  margin-top: 0.35em;
+  font-size: 3.25em;
+  letter-spacing: -0.025em;
+  font-weight: 300;
+}
+#intro .intro-inner header h1 strong {
+  font-weight: 700;
+  color: #FFBF68;
+}
+#intro .intro-inner p {
+  font-size: 1.5em;
+  line-height: 1.75em;
+  color: #888;
+  margin-bottom: 2em;
+}
+
+@media (max-width: 375px) {
+  #bs-nav ul li a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+  #intro {
+    padding-top: 2.5em;
+  }
+  #intro .row > .col-12-medium {
+    width: 100%;
+  }
+  #intro .intro-inner {
+    padding: 50px 0;
+  }
+  #intro .intro-inner .intro-image {
+    width: 15em;
+    height: 15em;
+    display: block;
+    margin: auto auto;
+  }
+  #intro .intro-inner header {
+    margin: 0 0 1.5em 0;
+    text-align: center;
+  }
+  #intro .intro-inner header h1 {
+    font-size: 2.25em;
+    line-height: 1.25em;
+  }
+  #intro .intro-inner p {
+    font-size: 1em;
+    text-align: center;
+  }
+  #intro .intro-inner .button {
+    text-align: center;
+    font-size: 1.2em;
+    letter-spacing: 0;
+    width: 100%;
+    padding: 1em 0 1em 0;
+  }
 }
