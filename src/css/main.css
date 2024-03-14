@@ -23,6 +23,10 @@ body, input, textarea, select {
   letter-spacing: -0.025em;
 }
 
+.show-mobile {
+  display: none;
+}
+
 #bs-nav {
   padding: 15px 0 15px 0;
   background-color: #3C405B;
@@ -76,11 +80,19 @@ body, input, textarea, select {
 }
 
 @media (max-width: 375px) {
+  .show-mobile {
+    display: block;
+  }
+
   #bs-nav ul li a {
     font-size: 14px;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 767px) {
+  .show-mobile {
+    display: block;
+  }
+
   #intro {
     padding-top: 2.5em;
   }
