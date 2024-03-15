@@ -60,6 +60,25 @@ body, input, textarea, select {
     }
 }
 
+#parties {
+    .card {
+        border: none;
+
+        .card-title {
+            font-size: 1.1rem;
+        }
+
+        .card-text {
+            font-size: .8rem;
+            color: $grey;
+        }
+    }
+
+    #coming-soon-header {
+        color: $branding-green;
+    }
+}
+
 #contact {
     margin-bottom: 2em;
 

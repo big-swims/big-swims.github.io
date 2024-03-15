@@ -47,6 +47,20 @@ body, input, textarea, select {
   margin: 0;
 }
 
+#parties .card {
+  border: none;
+}
+#parties .card .card-title {
+  font-size: 1.1rem;
+}
+#parties .card .card-text {
+  font-size: 0.8rem;
+  color: #888;
+}
+#parties #coming-soon-header {
+  color: #9ED2BC;
+}
+
 #contact {
   margin-bottom: 2em;
 }
