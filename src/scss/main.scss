@@ -52,6 +52,14 @@ body, input, textarea, select {
     }
 }
 
+#faq {
+    .accordion {
+        .accordion-header {
+            //background-color: pink !important;
+        }
+    }
+}
+
 #contact {
     margin-bottom: 2em;
 
