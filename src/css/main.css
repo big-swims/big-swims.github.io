@@ -29,26 +29,37 @@ body, input, textarea, select {
 .section {
   margin-top: 50px;
 }
-
-.anchor {
-  scroll-margin-top: 75px;
-}
-
-.section-header {
+.section .section-header {
   text-align: center;
   margin-bottom: 25px;
 }
-.section-header h1 {
+.section .section-header h1 {
   font-size: 2em;
   letter-spacing: -0.015em;
   font-weight: 700;
   margin: 0 0 0.5em 0;
   color: #FFBF68;
 }
-.section-header p {
+.section .section-header p {
   font-size: 1.25em;
   color: #888;
   margin: 0;
+}
+
+.anchor {
+  scroll-margin-top: 75px;
+}
+
+#faq .accordion .accordion-header .accordion-button {
+  color: #fff;
+  background-color: #3C405B;
+}
+#faq .accordion .accordion-header .accordion-button:not(.collapsed) {
+  color: #9ED2BC;
+  font-weight: 600;
+}
+#faq .accordion .accordion-header .accordion-button:focus {
+  border-color: pink !important;
 }
 
 #parties .card {
@@ -178,6 +189,10 @@ body, input, textarea, select {
     font-size: 12px;
   }
 
+  .section .section-header p {
+    font-size: 0.8em;
+  }
+
   #intro {
     padding-top: 2.5em;
   }
@@ -241,6 +256,10 @@ body, input, textarea, select {
     font-size: 14px;
   }
 
+  .section .section-header p {
+    font-size: 1em;
+  }
+
   #intro {
     padding-top: 2.5em;
   }
@@ -287,6 +306,10 @@ body, input, textarea, select {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
+  #parties .card .card-text {
+    font-size: 1rem;
+  }
+
   #intro .intro-inner {
     padding: 50px 0;
   }
@@ -313,6 +336,10 @@ body, input, textarea, select {
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
+  #parties .card .card-text {
+    font-size: 0.1rem;
+  }
+
   #intro .intro-inner {
     padding: 100px 0;
   }

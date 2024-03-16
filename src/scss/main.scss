@@ -31,35 +31,47 @@ body, input, textarea, select {
 
 .section {
     margin-top: 50px;
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 25px;
+    
+        h1 {
+            font-size: 2em;
+            letter-spacing: -0.015em;
+            font-weight: 700;
+            margin: 0 0 0.5em 0;
+            color: $branding-yellow;
+        }
+    
+        p {
+            font-size: 1.25em;
+            color: $grey;
+            margin: 0;
+        }
+    }
 }
 
 .anchor {
     scroll-margin-top: 75px;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 25px;
-
-    h1 {
-        font-size: 2em;
-        letter-spacing: -0.015em;
-        font-weight: 700;
-        margin: 0 0 0.5em 0;
-        color: $branding-yellow;
-    }
-
-    p {
-        font-size: 1.25em;
-        color: $grey;
-        margin: 0;
-    }
-}
-
 #faq {
     .accordion {
         .accordion-header {
-            //background-color: pink !important;
+            .accordion-button {
+                color: $white;
+                background-color: $branding-blue;
+
+                &:not(.collapsed) {
+                    color: $branding-green;
+                    font-weight: 600;
+                }
+
+                &:focus {
+                    border-color: pink !important;
+                }
+            }
         }
     }
 }
@@ -226,6 +238,14 @@ body, input, textarea, select {
         }
     }
 
+    .section {
+        .section-header {
+            p {
+                font-size: .8em;
+            }
+        }
+    }
+
     #intro {
         padding-top: 2.5em;
 
@@ -311,6 +331,14 @@ body, input, textarea, select {
         }
     }
 
+    .section {
+        .section-header {
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
     #intro {
         padding-top: 2.5em;
 
@@ -370,6 +398,14 @@ body, input, textarea, select {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991px) {
+    #parties {
+        .card {
+            .card-text {
+                font-size: 1rem;
+            }
+        }
+    }
+
     #intro {
         .intro-inner {
             padding: 50px 0;
@@ -405,6 +441,14 @@ body, input, textarea, select {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199px) {
+    #parties {
+        .card {
+            .card-text {
+                font-size: .1rem;
+            }
+        }
+    }
+
     #intro {
         .intro-inner {
             padding: 100px 0;
