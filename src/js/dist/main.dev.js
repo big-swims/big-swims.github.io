@@ -21,6 +21,4 @@ $(document).ready(function () {
     registerContainer.classList.remove('d-none');
     registerContainer.classList.add('show');
   }
-
-  console.log(monthAsNumber);
 });
