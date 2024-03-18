@@ -59,7 +59,7 @@
             </header>
             <p>Where everyday is a pool party waiting to happen! Check out our place for your next <strong>event</strong> or sign up for our awesome kid <strong>swimming lessons</strong>.</p>
             <div id="register-lessons-container" class="d-none">
-              <a href="/" target="_blank" class="button space shadow-sm">Register Now</a>
+              <a href="/register.html" class="button space shadow-sm">Register Now</a>
             </div>
             <div id="lessons-or-party-container">
               <a href="#lessons" class="button space shadow-sm">Swimming Lessons</a>
@@ -85,7 +85,16 @@
       <div class="container">
         <div class="section-header">
           <h1>Swimming Lessons</h1>
-          <p>Got a question about swimming with us? Concerns making waves? Don't hesitate to splash your questions our way!</p>
+          <p>At Big Swims, we understand the importance of equipping children with essential swimming skills, which is why we offer private lessons tailored to their individual needs. With five sessions spread across a week, our dedicated instructors focus on building confidence and proficiency in the water, ensuring a rewarding and effective learning experience.</p>
+        </div>
+
+        <div id="lessons-body" class="text-center">
+          <!-- <p id="lessons-price">$70 per week</p> -->
+          <img id="lessons-price" src="src/images/big-swims-kid-underwater-with-price.png" />
+
+          <p class="lessons-details">Each week includes five 20 minute private one-on-one sessions that run Monday-Friday. Your kids lessons will be at the same time every day during your scheduled week. If you have more than one kid needing lessons we do have multiple instructors so they can hopefully run at the same time.</p>
+        
+          <a href="/register.html" class="button space shadow-sm mt-2">Register Now</a>
         </div>
       </div>
     </div>
@@ -156,6 +165,33 @@
               </div>
             </div>
 
+            <div class="col-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Trampoline</h5>
+                  <p class="card-text">Add some bounce to your poolside fun with our trampoline, perfect for guests looking to dry off and relax while enjoying some high-flying excitement.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Basketball & Pickleball</h5>
+                  <p class="card-text">Take the fun outside the pool with our pickleball & basketball court, offering guests the chance to dry off or engage in some friendly competition under the sun.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title">Outdoor Bathroom & Shower</h5>
+                  <p class="card-text">Convenience meets comfort with our outdoor bathroom and shower, providing guests with quick access for restroom breaks or a refreshing rinse before heading out.</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -169,14 +205,14 @@
           <p>Confused about anything Big Swims-related? Fear not! Our FAQs are here to rescue you! From navigating swimming lessons to planning your pool party extravaganza, we've got the answers you need to stay afloat!</p>
         </div>
 
-        <div class="accordion" id="faq-accordion">
+        <div class="accordion accordion-flush" id="faq-accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="faq-headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-CollapseOne" aria-expanded="true" aria-controls="faq-CollapseOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-CollapseOne" aria-expanded="false" aria-controls="faq-CollapseOne">
                 What ages do we teach?
               </button>
             </h2>
-            <div id="faq-CollapseOne" class="accordion-collapse collapse show" aria-labelledby="faq-headingOne">
+            <div id="faq-CollapseOne" class="accordion-collapse collapse" aria-labelledby="faq-headingOne">
               <div class="accordion-body">
                 We are currently teaching children ages 3-12. Our primary focus is instilling vital survival techniques to ensure your child's safety in and around water.
               </div>
@@ -202,7 +238,20 @@
             </h2>
             <div id="faq-CollapseThree" class="accordion-collapse collapse" aria-labelledby="faq-headingThree">
               <div class="accordion-body">
-                TODO
+                Our pool is equipt with an onsite AED machine, First Aid kit and someone that is CPR/AED certified.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faq-headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-CollapseFour" aria-expanded="false" aria-controls="faq-CollapseFour">
+                What is the suggested number of weeks?
+              </button>
+            </h2>
+            <div id="faq-CollapseFour" class="accordion-collapse collapse" aria-labelledby="faq-headingFour">
+              <div class="accordion-body">
+                It is recommend to do at least 2 weeks for younger aged children or new swimmers. We do recommend at least one week per summer of children 3+ as a refresher on swimming saftey and strokes.
               </div>
             </div>
           </div>
@@ -248,6 +297,10 @@
               </div>
             </div>
           </form>
+
+          <div class="text-center mt-4">
+            <p id="other-contact-message" class="m-0">*You can also send us a message on <a href="https://www.instagram.com/bigswimsllc/" target="_blank">Instagram</a> with your questions.</p>
+          </div>
         </div>
       </div>
     </div>

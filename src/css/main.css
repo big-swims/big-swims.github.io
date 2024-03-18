@@ -59,7 +59,10 @@ body, input, textarea, select {
   font-weight: 600;
 }
 #faq .accordion .accordion-header .accordion-button:focus {
-  border-color: pink !important;
+  box-shadow: none;
+}
+#faq .accordion .accordion-header .accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }
 
 #parties .card {
@@ -74,6 +77,15 @@ body, input, textarea, select {
 }
 #parties #coming-soon-header {
   color: #9ED2BC;
+}
+
+#lessons #lessons-body #lessons-price {
+  width: 100%;
+  margin-bottom: 25px;
+}
+#lessons #lessons-body .lessons-details {
+  font-size: 1.25em;
+  color: #888;
 }
 
 #contact {
@@ -91,6 +103,15 @@ body, input, textarea, select {
 }
 #contact #contact-us-section .online-form-button.clear {
   background-color: #888;
+}
+#contact #contact-us-section #other-contact-message {
+  font-size: 16px;
+  color: #FFBF68;
+}
+#contact #contact-us-section #other-contact-message a {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit;
 }
 
 #bs-nav {
@@ -193,6 +214,10 @@ body, input, textarea, select {
     font-size: 0.8em;
   }
 
+  #lessons #lessons-body .lessons-details {
+    font-size: 0.8em;
+  }
+
   #intro {
     padding-top: 2.5em;
   }
@@ -230,6 +255,10 @@ body, input, textarea, select {
     padding: 0.7em 0 0.7em 0;
   }
 
+  #contact #contact-us-section #other-contact-message {
+    font-size: 12px;
+  }
+
   #footer #footer-follow {
     text-align: center;
   }
@@ -257,6 +286,14 @@ body, input, textarea, select {
   }
 
   .section .section-header p {
+    font-size: 1em;
+  }
+
+  #lessons #lessons-body #lessons-price {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  #lessons #lessons-body .lessons-details {
     font-size: 1em;
   }
 
@@ -294,6 +331,10 @@ body, input, textarea, select {
     letter-spacing: 0;
     width: 100%;
     padding: 0.7em 0 0.7em 0;
+  }
+
+  #contact #contact-us-section #other-contact-message {
+    font-size: 12px;
   }
 
   #footer #footer-end p {
@@ -367,5 +408,9 @@ body, input, textarea, select {
   }
   #contact #contact-us-section {
     padding: 0 200px;
+  }
+
+  #lessons #lessons-body #lessons-price {
+    width: 50%;
   }
 }

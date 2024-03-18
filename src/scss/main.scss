@@ -69,7 +69,11 @@ body, input, textarea, select {
                 }
 
                 &:focus {
-                    border-color: pink !important;
+                    box-shadow: none;
+                }
+
+                &:after {
+                    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
                 }
             }
         }
@@ -95,6 +99,27 @@ body, input, textarea, select {
     }
 }
 
+#lessons {
+    #lessons-body {
+        // #lessons-price {
+        //     font-size: 26px;
+        //     color: $branding-green;
+        //     font-weight: 700;
+        //     margin-bottom: 25px;
+        // }
+
+        #lessons-price {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .lessons-details {
+            font-size: 1.25em;
+            color: $grey;
+        }
+    }
+}
+
 #contact {
     margin-bottom: 2em;
 
@@ -112,6 +137,17 @@ body, input, textarea, select {
 
             &.clear {
                 background-color: $grey;
+            }
+        }
+
+        #other-contact-message {
+            font-size:  16px;
+            color: $branding-yellow;
+
+            a {
+                text-decoration: none;
+                font-weight: 700;
+                color: inherit;
             }
         }
     }
@@ -246,6 +282,14 @@ body, input, textarea, select {
         }
     }
 
+    #lessons {
+        #lessons-body {
+            .lessons-details {
+                font-size: .8em;
+            }
+        }
+    }
+
     #intro {
         padding-top: 2.5em;
 
@@ -286,6 +330,14 @@ body, input, textarea, select {
                 letter-spacing: 0;
                 width: 100%;
                 padding: .7em 0 .7em 0;
+            }
+        }
+    }
+
+    #contact {
+        #contact-us-section {
+            #other-contact-message {
+                font-size:  12px;
             }
         }
     }
@@ -339,6 +391,19 @@ body, input, textarea, select {
         }
     }
 
+    #lessons {
+        #lessons-body {
+            #lessons-price {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+    
+            .lessons-details {
+                font-size: 1em;
+            }
+        }
+    }
+
     #intro {
         padding-top: 2.5em;
 
@@ -378,6 +443,14 @@ body, input, textarea, select {
                 letter-spacing: 0;
                 width: 100%;
                 padding: .7em 0 .7em 0;
+            }
+        }
+    }
+
+    #contact {
+        #contact-us-section {
+            #other-contact-message {
+                font-size:  12px;
             }
         }
     }
@@ -484,6 +557,14 @@ body, input, textarea, select {
     
         #contact-us-section {
             padding: 0 200px;
+        }
+    }
+
+    #lessons {
+        #lessons-body {
+            #lessons-price {
+                width: 50%;
+            }
         }
     }
 }
