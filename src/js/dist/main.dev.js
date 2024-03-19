@@ -12,13 +12,16 @@ $(document).ready(function () {
 
   var monthAsNumber = new Date().getMonth() + 1,
       lessonsOrPartyContainer,
-      registerContainer;
+      registerContainer,
+      registerButton;
 
   if (monthAsNumber >= 3 && monthAsNumber <= 6) {
     registerContainer = document.getElementById("register-lessons-container");
     lessonsOrPartyContainer = document.getElementById("lessons-or-party-container");
+    registerButton = document.getElementById("register-lessons-button");
     lessonsOrPartyContainer.classList.add('d-none');
     registerContainer.classList.remove('d-none');
+    registerButton.classList.remove('d-none');
     registerContainer.classList.add('show');
   }
 });
