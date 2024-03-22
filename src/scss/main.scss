@@ -116,11 +116,15 @@ body, input, textarea, select {
         .lessons-details {
             font-size: 1.25em;
             color: $grey;
+
+            &.last {
+                margin-bottom: 0;
+            }
         }
 
         .lesson-sub-header {
             color: $grey;
-            text-decoration: underline;
+            //text-decoration: underline;
         }
     }
 }

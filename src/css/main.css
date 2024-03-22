@@ -87,9 +87,11 @@ body, input, textarea, select {
   font-size: 1.25em;
   color: #888;
 }
+#lessons #lessons-body .lessons-details.last {
+  margin-bottom: 0;
+}
 #lessons #lessons-body .lesson-sub-header {
   color: #888;
-  text-decoration: underline;
 }
 
 #contact {
