@@ -220,6 +220,11 @@ body, input, textarea, select {
             line-height: 1.75em;
             color: $grey;
             margin-bottom: 2em;
+
+            strong {
+                color: $branding-green;
+                font-weight: 700;
+            }
         }
     }
 }

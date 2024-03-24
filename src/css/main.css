@@ -171,6 +171,10 @@ body, input, textarea, select {
   color: #888;
   margin-bottom: 2em;
 }
+#intro .intro-inner p strong {
+  color: #9ED2BC;
+  font-weight: 700;
+}
 
 #footer {
   background-color: #3C405B;
