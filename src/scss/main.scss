@@ -94,9 +94,26 @@ body, input, textarea, select {
         }
     }
 
-    #coming-soon-header {
-        color: $branding-green;
+    .parties-details {
+        font-size: 1.25em;
+        color: $grey;
+        margin-top: 25px;
+        text-align: center;
+
+        a {
+            color: $branding-green;
+            text-decoration: none;
+            font-weight: bold;
+            
+            :visited {
+                color: $branding-green;
+            }
+        }
     }
+
+    // #coming-soon-header {
+    //     color: $branding-green;
+    // }
 }
 
 #lessons {
