@@ -12,7 +12,7 @@ $(document).ready(function() {
         registerContainer,
         registerButton;
 
-    if (monthAsNumber >= 4 && monthAsNumber <= 8) {
+    if (monthAsNumber >= 3 && monthAsNumber <= 8) {
         registerContainer = document.getElementById("register-lessons-container");
         lessonsOrPartyContainer = document.getElementById("lessons-or-party-container");
         registerButton = document.getElementById("register-lessons-button")
